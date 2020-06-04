@@ -7,6 +7,7 @@
   bind "#{ENV['FLUENTD_PROMETHEUS_BIND'] || '0.0.0.0'}"
   port "#{ENV['FLUENTD_PROMETHEUS_PORT'] || '24231'}"
   metrics_path "#{ENV['FLUENTD_PROMETHEUS_PATH'] || '/metrics'}"
+  aggregated_metrics_path "#{ENV['FLUENTD_PROMETHEUS_AGGREGATED_PATH'] || '/aggregated_metrics'}"
 </source>
 
 <source>
